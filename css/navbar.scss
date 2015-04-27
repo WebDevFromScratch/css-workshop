@@ -1,0 +1,41 @@
+@import 'colors';
+
+.nav-container {
+  margin-top: 30px;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
+  margin: -2px;
+  display: inline;
+  font-size: 14px;
+  height: 20px;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar a {
+  background-color: $color-natural;
+  border-right: 2px solid $color-dark-natural;
+  border-bottom: 2px solid $color-dark-natural;
+  display: inline-block;
+  color: $color-black;
+  padding: 10px;
+  &:hover {
+    box-shadow: inset 0 -3px 0px 0px $color-dark-natural;
+    -moz-box-shadow: inset 0 -3px 0px 0px $color-dark-natural;
+    -webkit-box-shadow: inset 0 -3px 0px 0px $color-dark-natural;
+  }
+}
+
+.navbar a.navbar__last-nav-item {
+  border-right: none;
+}
