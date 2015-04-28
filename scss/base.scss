@@ -1,8 +1,9 @@
 @import 'colors';
 
 * {
-   margin: 0px;
-   padding: 0px;
+  font-family: Arial;
+  margin: 0px;
+  padding: 0px;
 }
 
 .body {
@@ -16,5 +17,4 @@ a {
 .main-container {
   margin: auto;
   max-width: 1000px;
-  font-family: Arial;
 }

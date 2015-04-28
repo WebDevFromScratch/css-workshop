@@ -14,7 +14,7 @@
           <form class='form'>
             <input class='form__input' type='text' placeholder='Email'>
             <br/>
-            <input class='signin-form__input' type='text' placeholder='Password'>
+            <input class='form__input' type='text' placeholder='Password'>
             <input type='submit' value='Sign in'>
           </form>
         </div>
@@ -23,7 +23,7 @@
         <ul class='nav top-nav'>
           <li><a href=''>Popular</a></li>
           <li><a href=''>Recent</a></li>
-          <li><a class='nav__last-nav-item' href=''>Submit a story</a></li>
+          <li><a class='nav__last-nav-item' href='#submit-popup'>Submit a story</a></li>
         </ul>
       </div>
       <div class='stories-container'>
@@ -80,5 +80,37 @@
         </ul>
       </div>
     </div>
+
+    <div id='submit-popup' class='popup'>
+      <a href='#close' class='popup__close-overlay'></a>
+    	<div class='popup__popup-container'>
+        <div class='popup__title-bar'>
+          <h2>Submit a story</h2>
+        </div>
+        <div class='popup__main'>
+          <form class='form popup-form'>
+            <div class='popup-form__field-wrapper popup-form__text-field-wrapper'>
+              <div class='popup-form__label-wrapper'>Title</div>
+              <div class='popup-form__input-wrapper'>
+                <input class='form__input' type='text'>
+              </div>
+            </div>
+            <div class='popup-form__field-wrapper popup-form__text-field-wrapper'>
+              <div class='popup-form__label-wrapper'>URL</div>
+              <div class='popup-form__input-wrapper'>
+                <input class='form__input' type='text'>
+              </div>
+            </div>
+            <div class='popup-form__field-wrapper'>
+              <div class='popup-form__label-wrapper'></div>
+              <div class='popup-form__input-wrapper'>
+                <input type='submit' value='Submit'>
+              </div>
+            </div>
+          </form>
+        </div>
+    	</div>
+    </div>
+
   </body>
 </html>
