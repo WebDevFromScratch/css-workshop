@@ -3,5 +3,5 @@
 
 In order to generate usual `.css` files from included `.scss`, you should:
 - make sure you have sass gem installed (`gem install sass`)
-- use the gem with `sass input_file.scss output_file.css` to generate a single file OR
-- fire up the watcher with `sass --watch scss:css` - this will initally generate needed `.css` files in `/css` folder and watch for changes made in `/scss` directory and update files in `/css` folder accordingly.
+- use the gem with `sass main.scss main.css` to generate a main `.css` file OR
+- fire up the watcher with `sass scss/main.scss:css/main.css --watch` - this will initally generate the main `.css` file in `/css` folder and watch for any changes made in `main.scss` file and update `main.css` accordingly
