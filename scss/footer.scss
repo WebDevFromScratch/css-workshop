@@ -1,16 +1,20 @@
 @import 'colors';
 @import 'nav';
+@import 'form';
 
 .footer-container {
   height: 20px;
   padding: 8px;
-  position: relative;
   width: 100%;
 }
 
-.footer-search {
+.search-form {
   display: inline-block;
   margin-left: -8px;
+}
+
+.search-form__input {
+  @extend .form__input;
 }
 
 .footer-nav {
