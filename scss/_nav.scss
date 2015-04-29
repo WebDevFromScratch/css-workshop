@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin borders-n-shadows($color) {
   border-right: 1px solid $color;
   border-bottom: 2px solid $color;
@@ -15,11 +17,11 @@
 
 .nav__elem {
   display: inline;
-  font-size: 14px;
+  font-size: $font-small;
   height: 20px;
 }
 
 .nav__block-link {
   display: inline-block;
-  padding: 10px;
+  padding: $padding-s;
 }

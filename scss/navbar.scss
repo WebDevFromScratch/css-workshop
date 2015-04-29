@@ -1,8 +1,8 @@
-@import 'colors';
+@import 'variables';
 @import 'nav';
 
 .top-nav-container {
-  margin-top: 30px;
+  margin-top: $margin-xl;
 }
 
 .top-nav {

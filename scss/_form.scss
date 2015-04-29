@@ -1,5 +1,7 @@
+@import 'variables';
+
 .form__input {
-  margin-bottom: 5px;
-  padding: 2px;
-  border: 1px solid #CCCAC8;
+  margin-bottom: $margin-xs;
+  padding: $padding-xs;
+  border: 1px solid $color-gray;
 }

@@ -1,11 +1,11 @@
-@import 'colors';
+@import 'variables';
 @import 'form';
 
 .header {
   background-color: $color-green;
   border-bottom: 6px solid $color-dark-green;
   height: 50px;
-  padding: 8px;
+  padding: $padding-s;
   width: 100%;
 }
 
@@ -14,8 +14,8 @@
 }
 
 .header__title {
-  font-size: 30px;
-  margin-top: 8px;
+  font-size: $font-big;
+  margin-top: $margin-s;
 }
 
 .header__right {

@@ -1,22 +1,20 @@
-@import 'colors';
+@import 'variables';
 
 .stories-container {
-  margin-top: 30px;
+  margin-top: $margin-xl;
   width: 100%;
 }
 
 .stories-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .story {
   background-color: $color-natural;
   border-bottom: 4px solid $color-dark-natural;
   display: block;
-  margin-bottom: 20px;
-  padding: 8px;
+  margin-bottom: $margin-l;
+  padding: $padding-s;
   position: relative;
   width: 100%;
 }
@@ -33,7 +31,7 @@
 }
 
 .story__counter-text {
-  font-size: 14px;
+  font-size: $font-small;
 }
 
 .story__arrows-container {
@@ -87,15 +85,16 @@
   vertical-align: top;
   display: inline-block;
   line-height: 48px;
-  margin-bottom: -16px;
+  margin-bottom: -$margin-m;
   max-width: 85%;
 }
 
 .story__text h2 {
-  margin: 0 0 -16px 0;
+  font-size: $font-medium;
+  margin-bottom: -$margin-m;
   line-height: 24px;
 }
 
 .story__text a {
-  font-size: 14px;
+  font-size: $font-small;
 }
