@@ -1,21 +1,26 @@
 @import 'colors';
+@import 'nav';
 
 .top-nav-container {
   margin-top: 30px;
 }
 
 .top-nav {
+  @extend .nav;
   text-align: center;
 }
 
-.top-nav a {
+.top-nav__elem {
+  @extend .nav__elem;
+}
+
+.top-nav__block-link {
+  @extend .nav__block-link;
+  @include borders-n-shadows($color-dark-natural);
   background-color: $color-natural;
-  border-right: 1px solid $color-dark-natural;
-  border-bottom: 2px solid $color-dark-natural;
-  padding: 10px;
-  &:hover {
-    box-shadow: inset 0 -3px 0px 0px $color-dark-natural;
-    -moz-box-shadow: inset 0 -3px 0px 0px $color-dark-natural;
-    -webkit-box-shadow: inset 0 -3px 0px 0px $color-dark-natural;
-  }
+}
+
+.top-nav__block-link--last {
+  @extend .top-nav__block-link;
+  border-right: none;
 }
